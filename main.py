@@ -29,7 +29,7 @@ def choose_query_type():
         search_media = "media=movie" + concatenate_symbol
     else:
         print("Please enter either movie or music.")
-        sys.exit()
+        
 
 
 def choose_query_content():
@@ -70,9 +70,9 @@ def prepare_url():
     ctr = 0
 
     try:
+        results.clear() # the results list needs to be cleared so if user wants to continue searching the results don't print the previous search results as well
 
         for i in range(int(limit_number)):
-
             results.append("{track_Name} by {artist_Name}, {type} - {genre}".format(track_Name=request["results"][ctr]["trackName"],
                                                                            artist_Name=request["results"][ctr]["artistName"],
                                                                            type=request["results"][ctr]["kind"], genre=request["results"][ctr]["primaryGenreName"]))
