@@ -8,6 +8,7 @@ All you will have to do is run main.py in the terminal to get started.
 
 The following image shows two user query searches.
 
+![p](https://user-images.githubusercontent.com/35476666/125230327-6eac8c00-e28d-11eb-8785-6ca61385f276.PNG)
 
 The following image shows the error handling for when the search query doesn't have that many results as the limit.
 
